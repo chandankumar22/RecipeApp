@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_main_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/toolbar_neg_left_right_mg"
+        android:layout_marginTop="@dimen/toolbar_neg_top_mg"
+        android:layout_marginRight="@dimen/toolbar_neg_left_right_mg"
+        android:visibility="invisible">
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/ToolbarTextStyle"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_oval"
+            android:text="@string/today_s_recipe" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/toolbar_back_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_behind_size"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/toolbar_behind_neg_left_right_mg"
+        android:layout_marginTop="@dimen/toolbar_behind_neg_top_mg"
+        android:layout_marginRight="@dimen/toolbar_behind_neg_left_right_mg"
+        android:background="@drawable/shape_oval">
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/ToolbarTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/main_toolbar_right_iv_mg"
+            android:layout_marginBottom="@dimen/main_toolbar_bottom_iv_mg"
+            android:gravity="start"
+            android:text="@string/today_s_recipe" />
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/ToolbarTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/main_toolbar_right_iv_mg"
+            android:layout_marginBottom="@dimen/main_toolbar_bottom_iv_mg"
+            android:background="@drawable/ic_notes"
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recipe_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_main_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/rv_left_right_mg"
+        android:layout_marginEnd="@dimen/rv_left_right_mg"
+        android:nestedScrollingEnabled="true" />
+
+
+</RelativeLayout>
+
+
+
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.MainActivity">
+
+        <RelativeLayout
+            android:id="@+id/toolbar_main_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/toolbar_neg_left_right_mg"
+            android:layout_marginTop="@dimen/toolbar_neg_top_mg"
+            android:layout_marginRight="@dimen/toolbar_neg_left_right_mg"
+            android:visibility="invisible">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/ToolbarTextStyle"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_rectangle"
+                android:text="Today's Recipe" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/toolbar_back_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_behind_size"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="@dimen/toolbar_behind_neg_left_right_mg"
+            android:layout_marginTop="@dimen/toolbar_behind_neg_top_mg"
+            android:layout_marginRight="@dimen/toolbar_behind_neg_left_right_mg"
+            android:background="@drawable/shape_rectangle">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/ToolbarTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="110dp"
+                android:layout_marginBottom="120dp"
+                android:gravity="start"
+                android:text="Today's Recipe" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/ToolbarTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="120dp"
+                android:layout_marginBottom="124dp"
+                android:background="@drawable/ic_notes" />
+
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:fillViewport="true"
+            android:layout_below="@id/toolbar_main_container"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:id="@+id/main_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recipe_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="@dimen/rv_left_right_mg"
+                    android:layout_marginEnd="@dimen/rv_left_right_mg"
+                    android:nestedScrollingEnabled="false"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/recommended_tv"
+                    style="@style/AppTextStyle"
+                    android:layout_below="@id/recipe_list"
+                    android:layout_marginStart="@dimen/rv_left_right_mg"
+                    android:layout_marginTop="@dimen/sub_head_mg_top"
+                    android:text="@string/recommended"
+                    android:textSize="@dimen/text_size_large" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recommended_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/recommended_tv"
+                    android:layout_centerHorizontal="true"
+                    android:paddingStart="@dimen/rv_left_right_mg"
+                    android:paddingEnd="@dimen/rv_left_right_mg" />
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>-->
+

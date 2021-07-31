@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">RecipesApp</string>
+    <string name="bottom_nav_recipe_menu_title">Recipe</string>
+    <string name="bottom_search_menu_title">Search</string>
+    <string name="bottom_nav_keep_menu_title">Keep</string>
+    <string name="bottom_nav_person_menu_title">Profile</string>
+
+    <string name="shared_transition">shared transition</string>
+    <string name="time">Time</string>
+    <string name="calorie">Calorie</string>
+    <string name="price">Price</string>
+    <string name="materials">Materials</string>
+    <string name="recommended">Recommended</string>
+    <string name="search_your_recipe">Search your recipe</string>
+    <string name="my_profile">My Profile</string>
+    <string name="today_s_recipe">Today\'s Recipe</string>
+
+</resources>

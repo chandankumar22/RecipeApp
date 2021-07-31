@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_large">28sp</dimen>
+    <dimen name="toolbar_behind_size">400dp</dimen>
+
+    <dimen name="toolbar_neg_left_right_mg">-50dp</dimen>
+    <dimen name="toolbar_neg_top_mg">-40dp</dimen>
+
+    <dimen name="toolbar_behind_neg_left_right_mg">-100dp</dimen>
+    <dimen name="toolbar_behind_neg_top_mg">-200dp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="recipe_img_zoom_height">300dp</dimen>
+    <dimen name="view_left_right_mg">12dp</dimen>
+    <dimen name="sub_head_mg_top">28dp</dimen>
+    <dimen name="rv_left_right_mg">36dp</dimen>
+    <dimen name="recipe_item_below_pd">8dp</dimen>
+    <dimen name="recipe_img_height">250dp</dimen>
+    <dimen name="recipe_img_width">200dp</dimen>
+    <dimen name="bottom_nav_pd">8dp</dimen>
+    <dimen name="main_toolbar_right_iv_mg">120dp</dimen>
+    <dimen name="main_toolbar_bottom_iv_mg">124dp</dimen>
+</resources>
